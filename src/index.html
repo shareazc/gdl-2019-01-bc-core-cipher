@@ -4,12 +4,44 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald">
+     <style>
+      body {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+      <h1><center> Cifrado César </center></h1>
+      
+      <center> Eres Julio César, te encuentras en plena campaña de guerra contra los celtas
+        <br> y necesitas hacer llegar a tus generales importantes instrucciones de batalla, 
+        <br> pero los enemigos son muchos y si uno de tus mensajes fuera interceptado
+        <br>
+        podría significar la derrota. 
+        <br>
+        <br>
+        Usa este codificador para cifrar tus mensajes. 
+        <br>Elige una clave numérica e ingresa un mensaje, tus generales sabrán
+        <br> intepretarlo ¡pero para tus enemigos no tendrá sentido ni una palabra!
+      <br>
+      <br>
+        <div id="numberOffset" class="text">Ingresa la clave numérica
+        <input type="text" id="offsetByUser">
+        </div>
+      <br>
+        <div id="firstMessage" class="text">Ingresa tu mensaje<br><textarea name="userMessage" cols="60" rows="6" /> </textarea>
+      <br>
+        <button id="codeMessage" onclick="codeButton()">Codificar</button>
+        <button id="decodeMessage" onclick="decodeButton()">Decodificar</button>
+        <br>
+        <br>
+        <div id="secondMessage" class="text">Resultado<br><textarea name="solvedMessage" cols="60" rows="6" /> </textarea>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+  </div>
   </body>
 </html>
