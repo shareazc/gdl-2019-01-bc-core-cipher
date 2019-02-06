@@ -1,5 +1,5 @@
 window.cipher = {
-  encode (str, offset) {
+  encode (offset, str) {
     const abecedario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let newStr = "";
     for(let i=0; i < str.length; i++){
@@ -16,7 +16,7 @@ window.cipher = {
     return newStr;
   }, 
 
-  decode (str, offset) {
+  decode (offset, str) {
     const abecedario = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
     let newStr = "";
     for(let i=0; i < str.length; i++){

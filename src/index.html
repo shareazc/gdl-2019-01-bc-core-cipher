@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Oswald">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
      <style>
       body {
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
+        font-family: 'Cinzel', serif;;
+        font-size: 22px;
       }
     </style>
   </head>
@@ -19,26 +18,34 @@
       
       <center> 
         <p>
-        Eres Julio César, te encuentras en plena campaña de guerra contra los celtas
-        y necesitas hacer llegar a tus generales importantes instrucciones de batalla, 
-        pero los enemigos son muchos y si uno de tus mensajes fuera interceptado
-        podría significar la derrota. 
+        Eres el general Romano Julio César 
+        <br>te encuentras en plena campaña de guerra contra los celtas
+        <br>y necesitas hacer llegar a tus generales importantes instrucciones de batalla, 
+        <br>pero los enemigos son muchos y si uno de tus mensajes fuera interceptado
+        <br>podría significar la derrota. 
         </p>
         <p>
-        Usa este codificador para cifrar tus mensajes. 
-        Elige una clave numérica e ingresa un mensaje, tus generales sabrán
-        intepretarlo ¡pero para tus enemigos no tendrá sentido ni una palabra!
+        <br>Usa este codificador para cifrar tus mensajes. 
+        <br>Elige una clave numérica e ingresa un mensaje, tus generales sabrán
+        <br>intepretarlo ¡pero para tus enemigos no tendrá sentido ni una palabra!
         </p>
     
         Ingresa tu mensaje
         <p><input type="text" id="userMsg"/></p>
         Ingresa el offset
         <p><input type="text" id="userOffset"/></p>
-      <button id= "codifica" class="button">Codificar</button> 
-      <button id= "decodifica" class="button">Decodificar</button>
+      <button id= "codifica" class="button button1"><b>Codificar</b></button> 
+      <button id= "decodifica" class="button button2"><b>Decodificar</b></button>
         <p>Resultado</p>
         <p id="resultMsg"></p>
       </center>
+      <br>
+      <br>
+      <br>
+      <p align="right">Si te has divertido con este juego 
+        <br>prueba aprender un poco más sobre criptografía
+        <br><a href="https://www.adictosaltrabajo.com/2015/04/20/criptografia/" target="_blank">da click aquí para leer más</a>
+      </p>
    <script src="cipher.js"></script>
     <script src="index.js"></script>
   </div>
